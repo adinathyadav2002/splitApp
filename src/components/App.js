@@ -56,7 +56,15 @@ export default function App() {
         currSplitOpen={currSplitOpen}
       />
       {currSplitOpen && (
+<<<<<<< HEAD
         <SplitBill name={currSplitOpen} manageSplit={manageSplit} />
+=======
+        <SplitBill
+          name={currSplitOpen}
+          manageSplit={manageSplit}
+          key={currSplitOpen}
+        />
+>>>>>>> 346dd5b (adding diffing to this)
       )}
     </section>
   );
